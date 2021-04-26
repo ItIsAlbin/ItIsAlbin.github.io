@@ -55,7 +55,7 @@ aside a{
 }
 
 aside a:hover{
-    color: silver;
+    color: rgb(105, 105, 105);
 }
 
 main{
@@ -83,23 +83,13 @@ main div img{
     height: 100%;
 }
 
-.between-blocks-hor{
+.between-blocks{
     display: flex;
     border-radius: 4px;
     background-color: rgb(51, 51, 51);
     color: white;
     align-items: center;
     justify-content: center;
-}
-
-.between-blocks-vert{
-    display: flex;
-    border-radius: 4px;
-    background-color: rgb(51, 51, 51);
-    color: white;
-    align-items: center;
-    justify-content: center;
-    writing-mode: sideways-lr;
 }
 
 #futuremage{
@@ -168,7 +158,7 @@ main div img{
 
 .image-futuremage{object-position: 50% 50%; object-fit: cover;}
 .image-musicvideo{object-position: 58% 50%; object-fit: cover;}
-.image-dynamicbuildings{object-position: 44% 30%;}
+.image-dynamicbuildings{object-position: 44% 30%; object-fit: fill;}
 .image-buildings{object-position: 50% 50%; object-fit: cover;}
 .image-garbage{object-position: 30% 50%; object-fit: cover;}
 .image-misc{object-position: 50% 50%; object-fit: cover;}
