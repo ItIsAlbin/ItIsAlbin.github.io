@@ -1,17 +1,32 @@
+function init () {
+    randomColorBetweenBlocks();
+    startGarbageTimer();
+}
+
 function displayProjectText(id, textToDisplay) {
     document.getElementById(id).innerHTML = textToDisplay;
 }
 
 function randomColorBetweenBlocks () {
-    let elementsVert = document.getElementsByClassName('between-blocks-vert');
+    let elementsVert = document.getElementsByClassName('between-blocks');
     for(var i=0; i<elementsVert.length;i++){
-        elementsVert[i].style.backgroundColor = HSVtoRGB(0, 0, clamp(Math.random(), 0.2, 0.8));
+        elementsVert[i].style.backgroundColor = HSVtoRGB(0, 0, clamp(Math.random(), 0.2, 0.6));
     }
+}
 
-    let elementsHor = document.getElementsByClassName('between-blocks-hor');
-    for(var i=0; i<elementsHor.length;i++){
-        elementsHor[i].style.backgroundColor = HSVtoRGB(0, 0, clamp(Math.random(), 0.2, 0.8));
+function startGarbageTimer () {
+    setInterval(changeGarbagePic, 2400);
+}
+
+var garbageIndex = 1;
+
+function changeGarbagePic () {
+    garbageIndex++;
+    let imgGarbage = document.getElementsByClassName('image-garbage');
+    if(garbageIndex >= 9){
+        garbageIndex = 1;
     }
+    imgGarbage[0].src="Media/GarbageCollector/SciFiCol0" + garbageIndex.toString() + ".jpg";
 }
 
 function HSVtoRGB(h, s, v) {
@@ -37,3 +52,5 @@ function HSVtoRGB(h, s, v) {
 function clamp(number, min, max) {
     return Math.max(min, Math.min(number, max));
 }
+
+
