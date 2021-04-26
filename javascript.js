@@ -1,6 +1,7 @@
 function init () {
     randomColorBetweenBlocks();
     startGarbageTimer();
+    startBuildingsTimer();
 }
 
 function displayProjectText(id, textToDisplay) {
@@ -19,7 +20,6 @@ function startGarbageTimer () {
 }
 
 var garbageIndex = 1;
-
 function changeGarbagePic () {
     garbageIndex++;
     let imgGarbage = document.getElementsByClassName('image-garbage');
@@ -27,6 +27,20 @@ function changeGarbagePic () {
         garbageIndex = 1;
     }
     imgGarbage[0].src="Media/GarbageCollector/SciFiCol0" + garbageIndex.toString() + ".jpg";
+}
+
+function startBuildingsTimer () {
+    setInterval(changeBuildingsPic, 3000);
+}
+
+var buildingsIndex = 1;
+function changeBuildingsPic () {
+    buildingsIndex++;
+    let imgBuildings = document.getElementsByClassName('image-buildings');
+    if(buildingsIndex >= 8){
+        buildingsIndex = 1;
+    }
+    imgBuildings[0].src="Media/Buildings/Building0" + buildingsIndex.toString() + ".jpg";
 }
 
 function HSVtoRGB(h, s, v) {
