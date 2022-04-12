@@ -1,61 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-1.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-1.css" />
     <script type="text/javascript" src="javascript.js"></script>
     <title>Albin Andersson Portfolio</title>
-</head>
-<body onload="init()">
+  </head>
+  <body onload="init()">
     <header>
-        <div id="titleName">
-            <a href="">Albin Andersson</a>
-        </div>
-        <div id="titleSub">
-            <a href="">Portfolio</a>
-        </div>
+      <div id="titleName">
+        <a href="">Albin Andersson</a>
+      </div>
+      <div id="titleSub">
+        <a href="">Portfolio</a>
+      </div>
     </header>
     <aside>
-        <a href="">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <a href="">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </aside>
     <main>
+      <a href="futuremage.html" id="futuremage"
+        ><img
+          class="image-futuremage"
+          src="Media\FutureMage\FutureMageGif01.gif"
+          alt=""
+          onmouseover="displayProjectText('between-block01', 'FUTURE MAGE: SPELLMAKER')"
+          onmouseout="displayProjectText('between-block03', '')"
+      /></a>
 
-        <a href="futuremage.html" id="futuremage"><img class ="image-futuremage" src="Media\FutureMage\FutureMageGif01.gif" alt=""
-            onmouseover="displayProjectText('between-block01', 'FUTURE MAGE: SPELLMAKER')" onmouseout="displayProjectText('between-block03', '')"
-        ></a>
+      <a href="musicvideo.html" id="musicvideo"
+        ><img
+          class="image-musicvideo"
+          src="Media\MusicVideo\VolcanoClimbOutGIF.gif"
+          alt=""
+          onmouseover="displayProjectText('between-block01', 'MUSIC VIDEO')"
+          onmouseout="displayProjectText('between-block01', '')"
+      /></a>
 
-        <a href="musicvideo.html" id="musicvideo"><img class ="image-musicvideo" src="Media\MusicVideo\VolcanoClimbOutGIF.gif" alt=""
-            onmouseover="displayProjectText('between-block01', 'MUSIC VIDEO')" onmouseout="displayProjectText('between-block01', '')"
-        ></a>
-        
-        <a href="dynamicbuildings.html" id="dynamicbuildings"><img class ="image-dynamicbuildings" src="Media\DynamicBuildings\DynamicBuildingsGIFSquared.gif" alt=""
-            onmouseover="displayProjectText('between-block01', 'UNITY TOOL: DYNAMIC BUILDINGS')" onmouseout="displayProjectText('between-block01', '')"
-        ></a>
+      <a href="dynamicbuildings.html" id="dynamicbuildings"
+        ><img
+          class="image-dynamicbuildings"
+          src="Media\DynamicBuildings\DynamicBuildingsGIFSquared.gif"
+          alt=""
+          onmouseover="displayProjectText('between-block01', 'UNITY TOOL: DYNAMIC BUILDINGS')"
+          onmouseout="displayProjectText('between-block01', '')"
+      /></a>
 
-        <a href="Buildings.html" id="buildings"><img class ="image-buildings" src="Media\Buildings\Building05.jpg" alt=""
-            onmouseover="displayProjectText('between-block01', 'GAME ASSETS: BUILDINGS')" onmouseout="displayProjectText('between-block01', '')"
-        ></a>
+      <a href="Buildings.html" id="buildings"
+        ><img
+          class="image-buildings"
+          src="Media\Buildings\Building05.jpg"
+          alt=""
+          onmouseover="displayProjectText('between-block01', 'GAME ASSETS: BUILDINGS')"
+          onmouseout="displayProjectText('between-block01', '')"
+      /></a>
 
-        <a href="garbagecollector.html" id="garbage"><img class ="image-garbage" src="Media\GarbageCollector\SciFiCol01.jpg" alt="" 
-            onmouseover="displayProjectText('between-block01', 'SCI-FI GARBAGE TRUCK')" onmouseout="displayProjectText('between-block01', '')"
-        ></a>
-            
-        <a href="https://twitter.com/Albin_A_" target="_blank" id="misc"><img class ="image-misc" src="Media\Misc\Townhall.jpg" alt=""
-            onmouseover="displayProjectText('between-block01', 'MISC. ( TWITTER )')" onmouseout="displayProjectText('between-block01', '')"
-        ></a>
-        
-        <div id="between-block01" class="between-blocks"></div>
-        <div id="between-block02" class="between-blocks"></div>
-        <div id="between-block03" class="between-blocks"></div>
+      <a href="garbagecollector.html" id="garbage"
+        ><img
+          class="image-garbage"
+          src="Media\GarbageCollector\SciFiCol01.jpg"
+          alt=""
+          onmouseover="displayProjectText('between-block01', 'SCI-FI GARBAGE TRUCK')"
+          onmouseout="displayProjectText('between-block01', '')"
+      /></a>
 
+      <a href="https://twitter.com/Albin_A_" target="_blank" id="misc"
+        ><img
+          class="image-misc"
+          src="Media\Misc\Townhall.jpg"
+          alt=""
+          onmouseover="displayProjectText('between-block01', 'MISC. ( TWITTER )')"
+          onmouseout="displayProjectText('between-block01', '')"
+      /></a>
+
+      <div id="between-block01" class="between-blocks"></div>
+      <a href="https://albinsuselessweb.netlify.app/" id="useless">
+        <img
+          class="image-useless"
+          src="Media/UselessWeb/useless.jpg"
+          alt=""
+          onmouseover="displayProjectText('between-block01', 'JAVASCRIPT: WATER PHYSICS')"
+          onmouseout="displayProjectText('between-block01', '')"
+        />
+      </a>
+      <div id="between-block03" class="between-blocks"></div>
     </main>
     <footer>
-        <div>© 2021 by Albin Andersson</div>
+      <div>© 2021 by Albin Andersson</div>
     </footer>
-    
-</body>
+  </body>
 </html>
