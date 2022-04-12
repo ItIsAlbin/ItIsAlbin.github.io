@@ -188,7 +188,6 @@ main a img {
 .image-useless {
   object-position: 50% 50%;
   object-fit: cover;
-  width: 100%;
 }
 
 footer {
